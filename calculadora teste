@@ -8,8 +8,7 @@ int main(int argc, char** argv)
 	float r;
 	char op;
 
-	cout << "digite o primeiro numero: "
-	 << endl;
+	cout << "digite o primeiro numero: " << endl;
 	cin >> x;
 	cout << "digite o segundo numero: " << endl;
 	cin >> y;
@@ -30,8 +29,11 @@ int main(int argc, char** argv)
 		cout << "Multiplicacao: " << r << endl;
 		break;
 	case '/':
+		if(y != 0){
 		r = (float)x / y;
-		cout << "Divisao: " << r << endl;
+		cout << "Divisao: " << r << endl;}
+		else
+		cout << "DIVISAO POR ZERO";
 		break;
 	case '%':
 		r = x % y;
