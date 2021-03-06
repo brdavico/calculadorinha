@@ -1,0 +1,42 @@
+#include <iostream>
+
+using  namespace std;
+
+int main(int argc, char** argv)
+{
+	int x, y;
+	float r;
+	char op;
+
+	cout << "digite o primeiro numero: "
+	 << endl;
+	cin >> x;
+	cout << "digite o segundo numero: " << endl;
+	cin >> y;
+	cout << "digite o operador: ";
+	cin >> op;
+	switch(op)
+	{
+	case '+':
+		r = x + y;
+		cout << "Soma: " << r << endl;
+		break;
+	case '-':
+		r = x - y;
+		cout << "Subtracao: " << r << endl;
+		break;
+	case '*':
+		r = x * y;
+		cout << "Multiplicacao: " << r << endl;
+		break;
+	case '/':
+		r = (float)x / y;
+		cout << "Divisao: " << r << endl;
+		break;
+	case '%':
+		r = x % y;
+		cout << "Resto da divisao do 1o pelo 2o: " << r << endl;
+		break;
+	}
+	return 0;
+}
